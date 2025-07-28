@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    color: #fff;
+    padding: 10px;
+}
+.calculator{
+    width: 100%;
+    width: min(600px, 90vw);
+    margin-inline: auto;
+    margin-top: 10%;
+}
+.calculator h1{
+    font-size: min(30px, 8vw);
+    text-align: center;
+}
+.calculator h1 span{
+    color: #ffff76;
+}
+.input-box,
+.result-box{
+    margin: 10px 0;
+    padding: min(35px, 5vw);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.3);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.hide{
+    display: none;
+}
+.input-box label{
+    margin-block: 5px;
+    font-size: min(20px, 5vw);
+    color: white;
+    text-transform: capitalize;
+}
+.input-box input{
+    flex: 1;
+    margin-bottom: min(20px,3vw);
+    padding: min(15px, 3vw);
+    border: 0;
+    outline: 0;
+    font-size: min(20px, 5vw);
+    border-radius: 5px;
+    position: relative;
+}
+.input-box button{
+    background: #ffff76;
+    border: 0;
+    outline: 0;
+    margin-top: 10px;
+    padding: min(15px, 3vw);
+    border-radius: 5px;
+    font-weight: 500;
+    color: #333;
+    font-size: min(20px, 5vw);
+    cursor: pointer;
+}
+
+.input-box input[type="text"]{
+    text-transform: capitalize;
+}
+.input-box input[type="date"]::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+#result{
+    font-size: min(20px, 5vw);
+}
+
+#result span{
+    color: #ffff76;
+    text-transform: capitalize;
+}
+
+.author {
+    width: 100%;
+    margin-top: 100px;
+    background: #304452;
+    box-shadow: 0.5px 0.5px 10px 1px #4444443d;
+    padding-block: min(30px, 5vw);
+    padding-inline: min(30px, 10vw);
+    font-size: min(26px, 5vw);
+    border-radius: 10px;
+    color: #33ffd8;
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+.author a {
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: min(18px, 3vw);
+    color: #bbb;
+    transition: all 0.3s ease-in-out;
+}
+
+.author a:hover {
+    color: #ddd;
+}
+
+.author span {
+    animation: animate 1s ease-in-out 0s infinite;
+}
+
+
+
+@keyframes animate {
+    100%,
+    0% {
+        color: #33ff8f;
+    }
+
+    33% {
+        color: #f4f748;
+        opacity: 0.8;   
+    }
+    66% {
+        color: #33ffd8;
+        opacity: 1;   
+    }
+}
