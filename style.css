@@ -12,13 +12,15 @@
     background: linear-gradient(135deg, #4203a9, #90bafc);
     color: #fff;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .calculator{
     position: relative;
     width: 100%;
     width: min(600px, 90vw);
     margin-inline: auto;
-    margin-top: 10%;
 }
 .calculator h1{
     font-size: min(30px, 8vw);
@@ -48,6 +50,7 @@
 }
 .input-box input{
     flex: 1;
+    width: 100%;
     margin-bottom: min(20px,3vw);
     padding: min(15px, 3vw);
     border: 0;
