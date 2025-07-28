@@ -14,6 +14,7 @@
     padding: 10px;
 }
 .calculator{
+    position: relative;
     width: 100%;
     width: min(600px, 90vw);
     margin-inline: auto;
@@ -94,14 +95,13 @@
 }
 
 .author {
+    bottom: 0;
     width: 100%;
-    margin-top: 100px;
     background: #304452;
     box-shadow: 0.5px 0.5px 10px 1px #4444443d;
     padding-block: min(30px, 5vw);
     padding-inline: min(30px, 10vw);
     font-size: min(26px, 5vw);
-    border-radius: 10px;
     color: #33ffd8;
     text-align: center;
     font-family: "Montserrat";
